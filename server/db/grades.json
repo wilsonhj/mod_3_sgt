@@ -1,0 +1,25 @@
+{
+  "grades": [
+    {
+      "course": "Web Development",
+      "createdAt": 1562396180966,
+      "grade": 100,
+      "name": "Donnie Thompson",
+      "id": 1
+    },
+    {
+      "course": "Web Development",
+      "createdAt": 1562396229074,
+      "grade": 98,
+      "name": "Tim Davis",
+      "id": 3
+    },
+    {
+      "course": "Web Development",
+      "createdAt": 1562398136781,
+      "grade": 92,
+      "name": "Scott Bowler",
+      "id": 4
+    }
+  ]
+}

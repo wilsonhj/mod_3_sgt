@@ -1,0 +1,17 @@
+.table {
+    thead {
+        th {
+            border-top: none;
+        }
+    }
+
+    tbody {
+        i {
+            cursor: pointer;
+
+            &:hover {
+                filter: brightness(0.4);
+            }
+        }
+    }
+}
