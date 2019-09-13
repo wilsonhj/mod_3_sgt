@@ -6,9 +6,9 @@
 
 > 1. Fork this repo
 > 1. Clone your forked copy of this repo
->    - `git clone https://github.com/[Your Username]/mod_3_sgt_complete.git`
+>    - `git clone https://github.com/[Your Username]/mod_3_sgt.git`
 > 1. Change directory into the newly cloned repo
->    - `cd mod_3_sgt_complete`
+>    - `cd mod_3_sgt`
 > 1. Install dependencies 
 >    - `npm install`
 > 1. Start dev server
