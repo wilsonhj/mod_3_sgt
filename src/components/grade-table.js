@@ -1,18 +1,19 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import { getGradeData } from '../actions';
 import GradeRow from './grade-row';
 
 class GradeTable extends Component {
     componentDidMount(){
         console.log('Grade Table Component Mounted');
+        this.props.getGradeData();
     }
 
     render(){
-        const rowElements = (
-            <tr>
-                <td colSpan="5">Save grade rows into this constant</td>
-            </tr>
-        );
+        console.log('List Data: ', this.props.list);
+        const rowElements = this.props.list.map(item => {
+            return <GradeRow key={item.id} {...item} />
+        });
 
         return (
             <table className="table table-hover mx-2">
@@ -35,8 +36,10 @@ class GradeTable extends Component {
 
 function mapStateToProps(state){
     return {
-        
+        list: state.grades.list
     }
 }
 
-export default connect(mapStateToProps, { })(GradeTable);
+export default connect(mapStateToProps, {
+    getGradeData: getGradeData
+ })(GradeTable);
